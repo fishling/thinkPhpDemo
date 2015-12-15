@@ -1,0 +1,45 @@
+[ 2015-12-15T10:40:46+08:00 ] ::1 /thinkPhpDemo/index.php/Common
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000973s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001270s ]
+ERR: 无法加载控制器:Index
+
+[ 2015-12-15T10:40:59+08:00 ] ::1 /thinkPhpDemo/index.php/Admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000625s ]
+ERR: 无法加载模块:Admin
+
+[ 2015-12-15T10:58:36+08:00 ] ::1 /thinkPhpDemo/index.php/Home/User/test/user/lee/pass/123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000517s ]
+ERR: 无法加载模块:Home/User/test/user/lee/pass/123
+
+[ 2015-12-15T10:58:53+08:00 ] ::1 /thinkPhpDemo/index.php/Home/User/test/user_lee_pass_123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000575s ]
+ERR: 无法加载模块:Home/User/test/user
+
+[ 2015-12-15T10:58:57+08:00 ] ::1 /thinkPhpDemo/index.php/Home/User/test_user_lee_pass_123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000709s ]
+ERR: 无法加载模块:Home/User/test
+
+[ 2015-12-15T10:59:00+08:00 ] ::1 /thinkPhpDemo/index.php/Home/User_test_user_lee_pass_123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000715s ]
+ERR: 无法加载模块:Home/User
+
+[ 2015-12-15T11:00:49+08:00 ] ::1 /thinkPhpDemo/index.php/m=Home&c=User&a=test&user=lee&pass=123
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000708s ]
+ERR: 无法加载模块:M=Home&c=User&a=test&user=lee&pass=123
+
