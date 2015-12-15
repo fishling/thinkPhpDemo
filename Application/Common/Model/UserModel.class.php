@@ -6,7 +6,7 @@
  * Time: 15:45
  */
 
-namespace Home\Model;
+namespace Common\Model;
 use Think\Model;
 
 //一般来说，类名与表名一致。但也可以自行设置
@@ -19,5 +19,13 @@ class UserModel extends Model{
     //protected $trueTableName= 'tp_aa';
     //设置数据库名
     //protected $dbName = 'test';
+    //指定数据库字段，这时就不会再生成缓存文件
+    //protected $fields = array('id','user','email','_pk'=>'id',
+    //    'type'=>array('id'=>'smallint','user'=>'varchar','email'=>'varchar'));
 
+    //用于监控是否调用到这个类
+    public function __construct(){
+        parent::__construct();
+        echo 'Common UserModel';
+    }
 }

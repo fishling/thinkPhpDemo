@@ -28,7 +28,7 @@ define('APP_PATH','./Application/');
 //设定目录生成的文件
 define('DIR_SECURE_FILENAME','index.html');
 //设置目录页面内容
-define('DIR_SECURE_CONTENT','目录禁止');
+//define('DIR_SECURE_CONTENT','目录禁止');
 //禁止目录页面生成
 define('BUILD_DIR_SECURE',false);
 

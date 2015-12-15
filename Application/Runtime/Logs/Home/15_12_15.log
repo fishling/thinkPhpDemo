@@ -295,3 +295,7 @@ ERR: 1146:Table 'thinktest.tp_aa' doesn't exist
 ERR: 1146:Table 'test.think_user' doesn't exist
  [ SQL语句 ] : SHOW COLUMNS FROM `test`.`think_user`
 
+[ 2015-12-15T16:13:31+08:00 ] ::1 /thinkPhpDemo/Home/User/model
+ERR: 1146:Table 'thinktest.think_admin\_user' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `think_admin\_user`
+
