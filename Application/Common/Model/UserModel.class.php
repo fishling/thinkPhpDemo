@@ -28,4 +28,22 @@ class UserModel extends Model{
         parent::__construct();
         echo 'Common UserModel';
     }
+
+    //命名范围
+    protected $_scope = array(
+        'sql1'=>array(
+            'where'=>array('id'=>1)
+        ),
+        'sql2'=>array(
+            'order'=>array('date'=>'DESC'),
+            'limit'=>1
+        ),
+        'default'=>array(
+
+        )
+    );
+
+    //在模型里限制字段
+    protected $insertFields = 'user';
+    protected $updateFields = 'user';
 }
