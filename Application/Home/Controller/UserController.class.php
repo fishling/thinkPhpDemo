@@ -139,9 +139,19 @@ class UserController extends Controller {
         $data = $user->create();
         var_dump($data);
         //$data['date']=$_POST['birthday'];
-        $data = 'user=小明&email=&date='.date('Y-m-d H:i:s');
+        //$data = 'user=小明&email=&date='.date('Y-m-d H:i:s');
+        $user->add();  //已经创建了数据对象，add方法就不需要传入数据了
         //$user->add($data);
-        $user->data($data)->add();
+        //$user->data($data)->add();
+    }
+
+    //使用user对象新增
+    public function addUser(){
+        $user = M('User');
+        $user->user = 'liyouxi';
+        $user->email = 'liyouxi@163.com';
+        $user->date = '2016-6-6';
+        $user->add();
     }
 
     //更新数据
@@ -152,8 +162,29 @@ class UserController extends Controller {
         $data['date']='';
         $map['id']=10;
         echo $user->where($map)->save($data);
+
         /*$data['id']=10;
         $user->save($data);*/
+
         $user->where('id=10')->setField('user','小新');
+    }
+
+    public function delete(){
+        $user = M('User');
+        //$user->delete(10);  //参数默认是指主键值
+
+        /*$map['id']=10;
+        $user->where($map)->delete();*/
+
+        /*$map['id'] = array('gt',1);
+        $map['order']='date';
+        $user->where($map)->order(array('date'=>'DESC'))->limit(2)->delete();*/
+
+        //$user->delete(); //没有传入任何条件进行删除操作的话，不会执行删除操作
+        //$user->where('1')->delete(); //删除所有数据
+
+        //先查找要处理的数据，再update，或者delete
+        /*$user->find(13);
+        $user->delete();*/
     }
 }

@@ -44,6 +44,13 @@ class UserModel extends Model{
     );
 
     //在模型里限制字段
-    protected $insertFields = 'user';
-    protected $updateFields = 'user';
+    /*protected $insertFields = 'user';
+    protected $updateFields = 'user';*/
+
+    //将表单里的字段映射到数据库字段
+    /*protected $_map=array(
+        'name'=>'user',
+        'mail'=>'email',
+        'birthday'=>'date'
+    );*/
 }
